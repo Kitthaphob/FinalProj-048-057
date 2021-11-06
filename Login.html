@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "StyleLog.css">   
+    <title>Home</title>
+</head>  
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+        <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">BroadGame Online</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+            <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+            <a href="Home.html">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Home</span>
+            </a>
+               <span class="tooltip">Home</span>
+            </li>
+            <li>
+            <a href="Login.html">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Log in</span>
+            </a>
+               <span class="tooltip">Log in</span>
+            </li>
+            <li>
+             <a href="#">
+               <i class='bx bx-user' ></i>
+               <span class="links_name">Register</span>
+             </a>
+             <span class="tooltip">Register</span>
+           </li>
+           <li>
+             <a href="HowToPlay.html">
+               <i class='bx bx-chat' ></i>
+               <span class="links_name">How to play</span>
+             </a>
+             <span class="tooltip">How to play</span>
+           </li>
+           <li>
+             <a href="AllGames.html">
+               <i class='bx bx-pie-chart-alt-2' ></i>
+               <span class="links_name">All Games</span>
+             </a>
+             <span class="tooltip">All Games</span>
+           </li>
+           <li>
+             <a href="#">
+               <i class='bx bx-folder' ></i>
+               <span class="links_name">File Manager</span>
+             </a>
+             <span class="tooltip">Files</span>
+           </li>
+           <li>
+             <a href="#">
+               <i class='bx bx-cart-alt' ></i>
+               <span class="links_name">Order</span>
+             </a>
+             <span class="tooltip">Order</span>
+           </li>
+           <li>
+             <a href="#">
+               <i class='bx bx-heart' ></i>
+               <span class="links_name">Saved</span>
+             </a>
+             <span class="tooltip">Saved</span>
+           </li>
+           <li>
+             <a href="#">
+               <i class='bx bx-cog' ></i>
+               <span class="links_name">Setting My Account</span>
+             </a>
+             <span class="tooltip">Setting My Account</span>
+           </li>
+           <li class="profile">
+               <div class="profile-details">
+                 <img src="Img/karn.jpg" alt="profileImg">
+                 <div class="name_job">
+                   <div class="name">Kitthaphob Trichada</div>
+                   <div class="no">62130010048</div>
+                 </div>
+               </div>
+               <i class='bx bx-log-out' id="log_out" ></i>
+           </li>
+          </ul>
+        </div>
+        <section class="home-section">
+            <div class="text">Log in Your Account</div>
+                <div id = "frm">  
+                <h1>Login</h1>  
+                <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+                    <p>  
+                        <label> UserName: </label>  
+                        <input type = "text" id ="user" name  = "user" />  
+                    </p>  
+                    <p>  
+                        <label> Password: </label>  
+                        <input type = "password" id ="pass" name  = "pass" />  
+                        </p>  
+                    <p>     
+                        <input type =  "submit" id = "btn" value = "Login" />  
+                    </p>  
+                </form>  
+            </div>
+
+ <!-- validation for empty field   -->
+        <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+        </section>
+</body>     
+</html>  

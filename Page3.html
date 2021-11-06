@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <title>จำนวนในการรับของ กสพท.</title>
+    <script type = "text/javascript">
+        //<![CDATA[
+        function alertt(){
+        txtName = document.getElementById("txtName");
+        divOutput = document.getElementById("divOutput");
+        name = txtName.value;
+        alert(txtName.value + ' Registered successfully');
+        }
+        //]]>
+      </script>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top col-sm-12 col-md-12 col-lg-12">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <form action = "">
+                <fieldset>
+                <label>Please Enter your name to Register</label><input type = "text" id = "txtName" /> <button type = "button" onclick = "alertt()">Register</button>
+                </fieldset> </form>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Page1.html">กำหนดการสอบ TCAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Page2.html">สัดส่วนคะแนน</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Page3.html">จำนวนในการรับของ กสพท.</a>
+            </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+        <div class="row col-lg-12 col-md-12 col-sm-12">
+          <div class="col">
+            <img src="img/Calendar_KSPT.png" class="img-fluid">
+            </div>
+          <h1>จำนวนในการรับ (กสพท.)</h1>
+          <div class="col">
+            <img src="img/KSPT_University.jpg" class="img-fluid">
+          </div>
+          <br>
+          <h1>กติกาใหม่ กสพท65</h1>
+          <div class="col">
+            <img src="img/Katika_KSPT.jpg" class="img-fluid">
+          </div>
+        </div>
+</body>
+</html>
